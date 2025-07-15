@@ -5,7 +5,7 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Send me a product code:")
+    await update.message.reply_text("Hola, ¿cuál es el código de su producto?")
 
 async def handle_code(update: Update, context: ContextTypes.DEFAULT_TYPE):
     code = update.message.text.strip().upper()
